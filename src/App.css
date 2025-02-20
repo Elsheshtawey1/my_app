@@ -6,7 +6,7 @@
 body {
   overflow-x: hidden;
 }
-.loader{
+.loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ body {
   z-index: 3;
 }
 
-.navbar .show .NavLinks{
+.navbar .show .NavLinks {
   width: 100%;
   background-color: #070707;
   display: flex;
@@ -33,9 +33,10 @@ body {
 }
 
 .navbar-toggler {
-  border: 1px solid #f87765;
-  background-color: rgba(248, 119, 101, .2);
+  border: 1px solid #f87765 !important;
+  background-color: rgba(248, 119, 101, 0.2) !important;
   backdrop-filter: blur(3px);
+  outline: none;
 }
 
 .navbar img {
@@ -44,11 +45,10 @@ body {
 
 .NavLinks {
   width: 100%;
-
 }
 
 .NavLinks a {
-  color: hsla(0, 0%, 100%, .75);
+  color: hsla(0, 0%, 100%, 0.75);
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -61,13 +61,8 @@ body {
   color: #f87765;
   transform: scale(1.1);
 }
-.loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999; 
-}
+
+/* banner */
 .Banner {
   background-color: #070707;
   padding: 100px 0;
@@ -86,14 +81,14 @@ body {
   color: white;
 }
 
-.Banner .BannerText h2 ,.Banner .BannerText h1{
+.Banner .BannerText h1 {
   color: white;
   margin: 15px 0;
   font-size: 50px;
 }
 
 .Banner .BannerText h5 {
-  color: hsla(0, 0%, 100%, .75) !important;
+  color: hsla(0, 0%, 100%, 0.75) !important;
   margin: 20px 0;
   font-size: 25px;
 }
@@ -105,21 +100,68 @@ body {
   font-size: 18px;
   padding: 5px 20px;
   margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
 
+.Banner .BannerText button:hover {
+  background-color: #e06758;
 }
 
 .Banner .BannerImgs {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Banner .BannerImgs .waves {
   width: 500px;
-
 }
+
+.Banner .BannerImgs .laptop {
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+.Banner .imgbox {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(248, 119, 101, 0.2);
+  backdrop-filter: blur(3px);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.Banner .gimg {
+  left: 60px;
+  bottom: 150px;
+}
+
+.Banner .wimg {
+  left: 250px;
+  top: 50px;
+}
+
+.Banner .uimg {
+  right: 100px;
+  bottom: 100px;
+}
+
+.imgbox img {
+  width: 40px;
+}
+
 .HomeSec2 {
   background-color: #070707;
   padding: 50px 0;
-
 }
 
 .HomeSec2 .row {
@@ -132,7 +174,8 @@ body {
 
 .HomeSec2 .waves {
   width: 100%;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(23.279deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(23.279deg) skew(0deg, 0deg);
 }
 
 .HomeSec2 .people {
@@ -178,7 +221,6 @@ body {
   color: #f87765;
   font-size: 20px;
   text-decoration: none;
-
 }
 
 .HomeSec3 .swiper-slide {
@@ -219,13 +261,14 @@ body {
   left: 25%;
   height: 80%;
   object-fit: contain;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(19.9363deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(19.9363deg) skew(0deg, 0deg);
 }
 
 .HomeSec4 .divLeft,
 .HomeSec4 .divRight {
   width: 50%;
-  background-color: rgba(248, 119, 101, .2);
+  background-color: rgba(248, 119, 101, 0.2);
   backdrop-filter: blur(3px);
   display: flex;
   align-items: center;
@@ -247,7 +290,6 @@ body {
   width: 70px;
   height: 70px;
   margin-right: 10px;
-
 }
 
 .HomeSec4 .divLeft h5,
@@ -257,15 +299,13 @@ body {
 
 .HomeSec4 .divLeft p,
 .HomeSec4 .divRight p {
-  color: hsla(0, 0%, 100%, .75);
-
+  color: hsla(0, 0%, 100%, 0.75);
 }
 /* fifth section  */
 .HomeSec5 {
   background-color: #070707;
   padding: 100px;
   text-align: center;
-
 }
 
 .HomeSec5 h2 {
@@ -275,7 +315,7 @@ body {
 }
 
 .HomeSec5 .col-md-4 div {
-  background-color: rgba(248, 119, 101, .2);
+  background-color: rgba(248, 119, 101, 0.2);
   backdrop-filter: blur(3px);
   border-radius: 10px;
   padding: 30px 20px 50px;
@@ -300,14 +340,13 @@ body {
 }
 
 .HomeSec5 .col-md-4 p {
-  color: hsla(0, 0%, 100%, .75);
+  color: hsla(0, 0%, 100%, 0.75);
   margin-top: 20px;
 }
 /* sixth section  */
 .HomeSec6 {
   background-color: #070707;
   padding: 100px;
-
 }
 
 .HomeSec6 h3 {
@@ -315,7 +354,6 @@ body {
   color: white;
   font-size: 40px;
   margin-bottom: 30px;
-
 }
 
 .HomeSec6 p {
@@ -339,7 +377,6 @@ body {
   margin: auto;
   text-align: left;
   direction: ltr;
-
 }
 
 .HomeSec6 form input,
@@ -399,7 +436,7 @@ footer img {
 
 footer a {
   display: inline-block;
-  color: hsla(0, 0%, 100%, .75);
+  color: hsla(0, 0%, 100%, 0.75);
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -471,7 +508,6 @@ footer .copyright p:nth-child(2) {
 .AllProjectSec .col-md-4 div img {
   width: 100%;
   border-radius: 2%;
-
 }
 
 .AllProjectSec .col-md-4 div h5 {
@@ -479,17 +515,134 @@ footer .copyright p:nth-child(2) {
   font-size: 30px;
   margin: 10px 0;
   text-transform: capitalize;
-
 }
 
 .AllProjectSec .col-md-4 div p {
   color: rgb(223, 222, 222);
   font-weight: 400;
-
 }
 
 .AllProjectSec .col-md-4 div a {
   color: #f87765;
   text-decoration: none;
   font-size: 20px;
+}
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .Banner .BannerImgs .waves {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .Banner .BannerImgs .laptop {
+    width: 240px;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .Banner .imgbox {
+    width: 60px;
+    height: 60px;
+  }
+  .Banner .gimg {
+    left: 10%;
+    bottom: 100px;
+  }
+  .Banner .wimg {
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+  .Banner .uimg {
+    left: 90%;
+    bottom: 100px;
+    transform: translateX(-90%);
+  }
+  .imgbox img {
+    width: 30px;
+  }
+  .HomeSec3 .SecText {
+    padding: 100px 10px;
+  }
+  .HomeSec3 .SecText h3 {
+    margin: 0;
+    font-size: 25px;
+  }
+  .HomeSec4 {
+    padding: 100px 10px;
+  }
+  .HomeSec5 {
+    padding: 100px 0;
+  }
+  .HomeSec5 .col-md-4 div {
+    min-height: 700px;
+  }
+  .HomeSec4 .divLeft,
+  .HomeSec4 .divRight {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .HomeSec6 {
+    padding: 100px 0;
+  }
+  .HomeSec6 .d-flex {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 820px) and (max-width: 900px) {
+  .HomeSec5 {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  .HomeSec5 .col-md-4 img {
+    width: 80%;
+    height: 150px;
+    margin: 10px 0 0 0;
+  }
+  .HomeSec5 h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .service-box {
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .service-box img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .service-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .service-box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .Banner .BannerImgs .waves {
+    width: 350px;
+  }
+
+  .Banner .BannerImgs .laptop {
+    width: 260px;
+    top: 40px;
+  }
+
+  .HomeSec4 .divLeft,
+  .HomeSec4 .divRight {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .HomeSec6 {
+    padding: 100px 0;
+  }
+  .HomeSec6 .d-flex {
+    flex-wrap: wrap;
+  }
 }

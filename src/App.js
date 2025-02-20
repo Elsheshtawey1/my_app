@@ -1,10 +1,13 @@
+// App.js
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import NavBar from "./NavBar";
+import Products from "./Products"; // تحقق من صحة الاستيراد
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -19,7 +22,6 @@ function App() {
     <BrowserRouter>
       {loading ? (
         <div className="loader">
-          {" "}
           <ScaleLoader
             color={"#f87765"}
             loading={loading}
@@ -32,6 +34,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
           </Routes>
         </>
       )}
