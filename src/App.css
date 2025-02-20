@@ -120,6 +120,7 @@ body {
 
 .Banner .BannerImgs .waves {
   width: 500px;
+  overflow: hidden;
 }
 
 .Banner .BannerImgs .laptop {
@@ -178,6 +179,7 @@ body {
   width: 100%;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(23.279deg) skew(0deg, 0deg);
+    overflow: hidden;
 }
 
 .HomeSec2 .people {
@@ -227,11 +229,13 @@ body {
 
 .HomeSec3 .swiper-slide {
   padding: 20px;
+  overflow: hidden;
 }
 
 .HomeSec3 .swiper-slide img {
   width: 90%;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .HomeSec3 .swiper-pagination-bullet {
@@ -265,6 +269,7 @@ body {
   object-fit: contain;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(19.9363deg) skew(0deg, 0deg);
+    overflow: hidden;
 }
 
 .HomeSec4 .divLeft,
@@ -534,6 +539,7 @@ footer .copyright p:nth-child(2) {
   .Banner .BannerImgs .waves {
     width: 300px;
     margin-top: 30px;
+    overflow: hidden;
   }
   .Banner .BannerImgs .laptop {
     width: 240px;
